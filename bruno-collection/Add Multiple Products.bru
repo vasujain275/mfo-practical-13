@@ -1,0 +1,25 @@
+meta {
+  name: Add Multiple Products
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8080/orders/c7f884cf-2bcf-422a-9df5-a16d19d2ed5f/products
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "productName": "Product A",
+      "price": 19.99
+    },
+    {
+      "productName": "Product B",
+      "price": 29.99
+    }
+  ]
+  
+}

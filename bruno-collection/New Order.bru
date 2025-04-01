@@ -1,0 +1,23 @@
+meta {
+  name: New Order
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/orders?billingAddress=123%20Main%20St&invoiceDate=2025-04-01
+  body: json
+  auth: none
+}
+
+params:query {
+  billingAddress: 123 Main St
+  invoiceDate: 2025-04-01
+}
+
+body:json {
+  {
+    "customerName": "John Doe"
+  }
+  
+}
