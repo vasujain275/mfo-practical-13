@@ -1,0 +1,15 @@
+meta {
+  name: Search Customers by Name
+  type: http
+  seq: 15
+}
+
+get {
+  url: http://localhost:8080/customer/search?name=John
+  body: none
+  auth: inherit
+}
+
+params:query {
+  name: John
+}
